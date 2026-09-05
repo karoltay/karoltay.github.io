@@ -11,6 +11,7 @@ for (const entry of await readdir(rootPath)) {
   if (entry === 'client' || entry === 'server') continue;
   await rename(join(rootPath, entry), join(clientPath, entry));
 }
+await writeFile(join(clientPath, '.nojekyll'), '', 'utf8');
 
 await mkdir(serverPath, { recursive: true });
 await writeFile(join(serverPath, 'index.js'), `
