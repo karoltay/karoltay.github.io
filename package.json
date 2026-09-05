@@ -1,0 +1,17 @@
+{
+  "name": "taidi-speaker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build && node scripts/prepare-sites.mjs",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/check": "latest",
+    "@tailwindcss/vite": "latest",
+    "astro": "^5.0.0",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}

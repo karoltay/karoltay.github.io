@@ -1,0 +1,178 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import type sampleContent from '../content/pl.json';
+
+type Content = typeof sampleContent;
+interface Props { content: Content; alternatePath: string; }
+const { content, alternatePath } = Astro.props;
+const mailto = `mailto:${content.contact.email}?subject=${encodeURIComponent(content.contact.subject)}`;
+---
+<BaseLayout content={content} alternatePath={alternatePath}>
+  <header class="site-header">
+    <a class="wordmark" href={content.lang === 'pl' ? '/' : '/en/'} aria-label="Karol Taidi Tajduś — home">
+      <span>TAIDI</span><i></i>
+    </a>
+    <nav aria-label={content.lang === 'pl' ? 'Główna nawigacja' : 'Main navigation'}>
+      <a href="#about">{content.nav.about}</a>
+      <a href="#topics">{content.nav.topics}</a>
+      <a href="#contact">{content.nav.contact}</a>
+    </nav>
+    <a class="lang" href={alternatePath} hreflang={content.lang === 'pl' ? 'en' : 'pl'}>
+      {content.lang === 'pl' ? 'EN' : 'PL'} <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="hero-art" aria-hidden="true">
+        <img src="/images/taidi-hero.webp" width="1086" height="723" alt="" fetchpriority="high" />
+        <svg viewBox="0 0 800 800" preserveAspectRatio="none">
+          <path d="M30 635 C180 520 236 742 390 598 S615 426 776 511" />
+          <path d="M-20 681 C167 564 269 781 423 627 S658 497 845 555" />
+        </svg>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">{content.hero.eyebrow}</p>
+        <h1>{content.hero.title}<br /><em>{content.hero.accent}</em></h1>
+        <p class="hero-lead">{content.hero.lead}</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#contact">{content.hero.cta}<span aria-hidden="true">↘</span></a>
+          <span class="role">{content.hero.role}</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#truths"><span>01</span>{content.hero.scroll}<i aria-hidden="true">↓</i></a>
+    </section>
+
+    <section class="section truths" id="truths">
+      <header class="section-heading" data-reveal>
+        <p class="eyebrow dark">{content.truthsIntro.eyebrow}</p>
+        <h2>{content.truthsIntro.title}</h2>
+        <p>{content.truthsIntro.lead}</p>
+      </header>
+      <ol class="truth-list">
+        {content.truths.map((truth, index) => (
+          <li data-reveal>
+            <span class="number">0{index + 1}</span>
+            <h3>{truth.title}</h3>
+            <p>{truth.body}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-intro" data-reveal>
+        <p class="eyebrow">{content.about.eyebrow}</p>
+        <h2>{content.about.title}</h2>
+      </div>
+      <div class="about-copy" data-reveal>
+        <figure class="about-photo"><img src="/images/taidi-portrait.webp" width="1100" height="1654" loading="lazy" alt={content.lang === 'pl' ? 'Karol Taidi Tajduś — portret' : 'Portrait of Karol Taidi Tajduś'} /></figure>
+        {content.about.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+      <div class="stats">
+        {content.about.stats.map((stat) => (
+          <div class="stat" data-reveal><strong>{stat.value}<sup>{stat.suffix}</sup></strong><span>{stat.label}</span></div>
+        ))}
+      </div>
+    </section>
+
+    <section class="section work">
+      <header class="section-heading" data-reveal>
+        <p class="eyebrow dark">{content.work.eyebrow}</p>
+        <h2>{content.work.title}</h2>
+      </header>
+      <div class="work-grid">
+        {content.work.items.map((item) => (
+          <article data-reveal>
+            <span>{item.number}</span>
+            <h3>{item.title}</h3>
+            <p>{item.body}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section talks" id="topics">
+      <header class="section-heading" data-reveal>
+        <p class="eyebrow dark">{content.talks.eyebrow}</p>
+        <h2>{content.talks.title}</h2>
+      </header>
+      <ol class="talk-list">
+        {content.talks.items.map((talk, index) => (
+          <li data-reveal>
+            <span>0{index + 1}</span>
+            <div class="talk-content">
+              <h3>{talk.title}</h3>
+              <ul>{talk.bullets.map((bullet) => <li>{bullet}</li>)}</ul>
+              <p class="talk-meta"><b>{content.talks.for}:</b> {talk.audience}<i>·</i><b>{content.talks.format}:</b> {talk.format}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="section proof">
+      <div class="proof-title" data-reveal>
+        <p class="eyebrow">{content.proof.eyebrow}</p>
+        <h2>{content.proof.title}</h2>
+      </div>
+      <div class="stage-gallery" data-reveal>
+        <figure class="gallery-main"><img src="/images/taidi-microphone.webp" width="480" height="720" loading="lazy" alt={content.lang === 'pl' ? 'Karol Tajduś przemawia z mikrofonem na scenie' : 'Karol Tajduś speaking on stage'} /></figure>
+        <figure><img src="/images/taidi-stage.webp" width="1086" height="724" loading="lazy" alt={content.lang === 'pl' ? 'Karol Tajduś podczas prezentacji konferencyjnej' : 'Karol Tajduś giving a conference presentation'} /></figure>
+        <figure><img src="/images/taidi-panel.webp" width="480" height="320" loading="lazy" alt={content.lang === 'pl' ? 'Karol Tajduś podczas panelu dyskusyjnego' : 'Karol Tajduś during a panel discussion'} /></figure>
+      </div>
+      <div class="event-cloud" data-reveal>
+        {content.proof.events.map((event) => <span>{event}</span>)}
+      </div>
+      <p class="proof-note">{content.proof.note}</p>
+    </section>
+
+    <section class="section videos">
+      <header class="section-heading" data-reveal>
+        <p class="eyebrow dark">{content.videos.eyebrow}</p>
+        <h2>{content.videos.title}</h2>
+      </header>
+      <div class="video-grid">
+        <article class="video-card" data-reveal>
+          <a class="video-cover youtube-cover" href="https://www.youtube.com/watch?v=zZErDQ2jUyc" target="_blank" rel="noopener noreferrer" aria-label={`${content.videos.play}: ${content.videos.youtubeTitle}`}>
+            <img src="https://i.ytimg.com/vi/zZErDQ2jUyc/maxresdefault.jpg" alt="" loading="lazy" />
+            <span class="play" aria-hidden="true">▶</span>
+          </a>
+          <p>{content.videos.youtubeSource}</p><h3>{content.videos.youtubeTitle}</h3>
+        </article>
+        <article class="video-card" data-reveal>
+          <video class="video-cover" controls preload="metadata" poster="/images/taidi-stage.webp">
+            <source src="https://1.newseria.pl/video/1663670863_pekao_ai_1_sz.mp4" type="video/mp4" />
+          </video>
+          <p>{content.videos.newseriaSource}</p><h3>{content.videos.newseriaTitle}</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section materials">
+      <header class="section-heading" data-reveal>
+        <p class="eyebrow dark">{content.materials.eyebrow}</p>
+        <h2>{content.materials.title}</h2>
+      </header>
+      <div class="material-grid">
+        <article data-reveal><span>PDF · 01</span><h3>{content.materials.speaker}</h3><p>{content.materials.speakerDesc}</p><button disabled>{content.materials.pending}</button></article>
+        <article data-reveal><span>PDF · 02</span><h3>{content.materials.training}</h3><p>{content.materials.trainingDesc}</p><button disabled>{content.materials.pending}</button></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div data-reveal>
+        <p class="eyebrow">{content.contact.eyebrow}</p>
+        <h2>{content.contact.title}</h2>
+        <p class="contact-lead">{content.contact.lead}</p>
+      </div>
+      <div class="contact-actions" data-reveal>
+        <a class="button button-light" href={mailto}>{content.contact.write}<span aria-hidden="true">↗</span></a>
+        <a class="email" href={mailto}>{content.contact.email}</a>
+        <button class="copy" data-copy={content.contact.email} data-copied={content.contact.copied}>{content.contact.copy}</button>
+        <a class="linkedin" href={content.contact.linkedinUrl} target="_blank" rel="noopener noreferrer">{content.contact.linkedin}<span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer><span>{content.footer}</span><span>© {new Date().getFullYear()}</span></footer>
+</BaseLayout>

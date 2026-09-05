@@ -1,0 +1,103 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "Karol ‘Taidi’ Tajduś — AI beyond the proof of concept",
+    "description": "Keynotes and workshops about deploying AI in large organizations. No magic tricks. Accountability for outcomes."
+  },
+  "nav": { "about": "About", "topics": "Topics", "contact": "Contact", "menu": "Open menu" },
+  "hero": {
+    "eyebrow": "Speaker · AI leader · Transformation practitioner",
+    "title": "AI ambition often grows faster",
+    "accent": "than a company’s ability to deliver on it.",
+    "lead": "I help executives understand why promising proofs of concept never become real change — and what it takes to make them work.",
+    "role": "Karol Tajduś · Chief AI Officer",
+    "cta": "Let’s discuss your event",
+    "scroll": "Discover my perspective"
+  },
+  "truthsIntro": {
+    "eyebrow": "From the boardroom and the delivery front line",
+    "title": "Five truths about why AI proofs of concept die",
+    "lead": "The model usually works in the demo. The real problem comes next: someone has to own it, integrate it into the process and convince people to actually use it."
+  },
+  "truths": [
+    { "title": "The POC has no problem owner", "body": "The technology team delivers, but nobody in the business has the mandate, budget or personal accountability to implement it." },
+    { "title": "A demo pretends to be a product", "body": "A working prototype is only a hypothesis. Scaling begins when integration, security, process and users enter the room." },
+    { "title": "We measure excitement, not change", "body": "Applause after a presentation cannot tell you whether a solution shortened a process, reduced risk or changed human decisions." },
+    { "title": "AI gets an exemption from the rules", "body": "The experiment bypasses architecture and compliance, then discovers there is no path to production. Governance should accelerate, not obstruct." },
+    { "title": "The organization is not ready to change", "body": "Even the best model cannot implement itself. Without new roles, habits and decisions, AI remains a presentation about the future." }
+  ],
+  "about": {
+    "eyebrow": "About me",
+    "title": "I connect the perspectives of a technologist, advisor and enterprise leader.",
+    "paragraphs": [
+      "I have worked with technology, data and AI for 15 years. My professional thesis is simple: AI projects in large companies do not die for lack of a model. They die between demo and production — on knowledge, integration and governance. Everything I do is about closing that gap.",
+      "During 12 years at Accenture, I built a Data & AI team from scratch and grew it beyond 70 people with dozens of deployments. I led global technology programs involving more than 350 specialists and budgets above USD 80 million. Altogether, I have delivered more than 50 technology and Data & AI projects.",
+      "Today I lead the AI transformation at Bank Pekao. Around 95% of our AI implementations are built internally, keeping the architecture, development and accountability within the bank.",
+      "I lecture on postgraduate AI transformation programs and train executives to deploy AI in regulated organizations. I also speak publicly about moving beyond the proof of concept, including in PFR’s ‘Start with Polish AI’ series."
+    ],
+    "stats": [
+      { "value": "15", "suffix": " years", "label": "in technology" },
+      { "value": "50", "suffix": "+", "label": "technology and AI projects" },
+      { "value": "350", "suffix": "+", "label": "specialists across programs" },
+      { "value": "80", "suffix": "m USD", "label": "in managed budgets" }
+    ]
+  },
+  "work": {
+    "eyebrow": "Selected experience",
+    "title": "The scale where AI has to work for real",
+    "items": [
+      { "number": "01", "title": "Building Data & AI at Accenture", "body": "From zero to more than 70 people and dozens of deployments. This was not a recruitment exercise, but the creation of capabilities and services that had not previously existed in the firm." },
+      { "number": "02", "title": "Global technology programs", "body": "More than 350 specialists, budgets above USD 80 million and international clients. At this scale, a governance error costs more than an error in code." },
+      { "number": "03", "title": "AI transformation at Bank Pekao", "body": "An operating model built from the ground up: Responsible AI, hybrid architecture and a working portfolio spanning GenAI for employees and customers, agents, Contact Center and AI-assisted software development." }
+    ]
+  },
+  "talks": {
+    "eyebrow": "Speaking topics",
+    "title": "Conversations worth starting on stage",
+    "for": "For",
+    "format": "Format",
+    "items": [
+      { "title": "You bought AI. How do you know it works?", "bullets": ["Why license and prompt counts measure nothing that matters.", "Five indicators of real adoption that can be introduced in a week.", "When vendor lock-in actually begins and what it costs to leave."], "audience": "boards, CIOs, HR leaders", "format": "25–60 min keynote, panel" },
+      { "title": "The AI initiative portfolio — what to shut down and when", "bullets": ["Closing projects as a management function, not a team failure.", "Stop criteria: no problem, no production path or no viable unit economics.", "How to make a portfolio resilient to a sponsor change."], "audience": "boards, CIOs", "format": "25–45 min keynote" },
+      { "title": "Why the model guesses — and how to test something that answers differently every time", "bullets": ["Hallucination as a predictable result of how models are trained.", "Why public benchmarks do not measure the quality of your system.", "Evaluation as a deployment gate: tests, thresholds and regression."], "audience": "technical teams, CIOs", "format": "30 min keynote, workshop" },
+      { "title": "Building an AI function from scratch — an operating model, not a slide", "bullets": ["Where the AI unit belongs in the organization and why it matters.", "What building internal capabilities instead of outsourcing really means.", "Budget, cooperation with IT and risk, and hiring decisions."], "audience": "boards, CIOs, transformation leaders", "format": "30–60 min keynote, workshop" }
+    ]
+  },
+  "proof": {
+    "eyebrow": "On stage",
+    "title": "Experience in conversations with business and technology",
+    "events": ["European Financial Congress", "Banking Technology Forum Congress", "CXO HUB", "Data Science Summit Warsaw", "IT@Bank", "Code Europe"],
+    "note": "Organizer testimonials will be added after approval."
+  },
+  "videos": {
+    "eyebrow": "Watch the talks",
+    "title": "Beyond the thesis. See me on stage.",
+    "play": "Play video",
+    "youtubeTitle": "Managing data effectively in large organizations with Data Mesh",
+    "youtubeSource": "Integral Solutions · YouTube",
+    "newseriaTitle": "AI in a large organization — a conversation about implementation",
+    "newseriaSource": "Newseria"
+  },
+  "materials": {
+    "eyebrow": "Materials",
+    "title": "Everything an event organizer needs",
+    "speaker": "Speaker kit",
+    "speakerDesc": "Bio, photos and full talk descriptions.",
+    "training": "Workshop overview",
+    "trainingDesc": "A one-pager for leadership teams.",
+    "pending": "Coming soon"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let’s create a talk that changes something.",
+    "lead": "Tell me about your audience, context and the question your organization is facing.",
+    "write": "Send an email",
+    "copy": "Copy address",
+    "copied": "Copied",
+    "email": "kontakt@example.com",
+    "linkedin": "LinkedIn",
+    "linkedinUrl": "https://www.linkedin.com/in/karol-tajdus/?locale=pl",
+    "subject": "Speaking inquiry"
+  },
+  "footer": "Karol ‘Taidi’ Tajduś · AI that works beyond the slide deck"
+}

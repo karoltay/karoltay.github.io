@@ -1,0 +1,68 @@
+---
+import '../styles/global.css';
+import type sampleContent from '../content/pl.json';
+
+type Content = typeof sampleContent;
+interface Props { content: Content; alternatePath?: string; }
+const { content } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const plUrl = new URL('/', Astro.site);
+const enUrl = new URL('/en/', Astro.site);
+---
+<!doctype html>
+<html lang={content.lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={content.meta.description} />
+    <meta name="theme-color" content="#11101c" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="pl" href={plUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="x-default" href={plUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={content.meta.title} />
+    <meta property="og:description" content={content.meta.description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/og.png', Astro.site)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={content.meta.title} />
+    <meta name="twitter:description" content={content.meta.description} />
+    <meta name="twitter:image" content={new URL('/og.png', Astro.site)} />
+    <title>{content.meta.title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">{content.lang === 'pl' ? 'Przejdź do treści' : 'Skip to content'}</a>
+    <slot />
+    <script is:inline>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('[data-reveal]').forEach((element) => observer.observe(element));
+
+      document.querySelectorAll('[data-copy]').forEach((button) => {
+        button.addEventListener('click', async () => {
+          const email = button.dataset.copy;
+          try {
+            await navigator.clipboard.writeText(email);
+          } catch {
+            const area = document.createElement('textarea');
+            area.value = email;
+            document.body.appendChild(area);
+            area.select();
+            document.execCommand('copy');
+            area.remove();
+          }
+          const current = button.textContent;
+          button.textContent = button.dataset.copied;
+          window.setTimeout(() => { button.textContent = current; }, 1800);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+{
+  "lang": "pl",
+  "meta": {
+    "title": "Karol ‘Taidi’ Tajduś — AI, które wychodzi poza POC",
+    "description": "Wystąpienia i szkolenia o wdrażaniu AI w dużych organizacjach. Bez pokazów magii. Z odpowiedzialnością za wynik."
+  },
+  "nav": { "about": "O mnie", "topics": "Tematy", "contact": "Kontakt", "menu": "Otwórz menu" },
+  "hero": {
+    "eyebrow": "Mówca · Lider AI · Praktyk transformacji",
+    "title": "Ambicja AI często rośnie szybciej",
+    "accent": "niż zdolność firmy do jej realizacji.",
+    "lead": "Pomagam zarządom zrozumieć, dlaczego obiecujące POC-e nie stają się prawdziwą zmianą — i co zrobić, żeby zaczęły.",
+    "role": "Karol Tajduś · Chief AI Officer",
+    "cta": "Porozmawiajmy o wystąpieniu",
+    "scroll": "Poznaj moją perspektywę"
+  },
+  "truthsIntro": {
+    "eyebrow": "Z sali zarządu i frontu wdrożeń",
+    "title": "Pięć prawd o tym, dlaczego POC-e umierają",
+    "lead": "Model zwykle działa już na demo. Problem zaczyna się później: ktoś musi wziąć odpowiedzialność, wpiąć rozwiązanie w proces i przekonać ludzi, żeby naprawdę z niego korzystali."
+  },
+  "truths": [
+    { "title": "POC powstaje bez właściciela problemu", "body": "Zespół dowozi technologię, ale nikt po stronie biznesu nie ma mandatu, budżetu ani osobistej odpowiedzialności za wdrożenie." },
+    { "title": "Demo udaje produkt", "body": "Działający prototyp to dopiero hipoteza. Skalowanie zaczyna się tam, gdzie pojawiają się integracje, bezpieczeństwo, proces i użytkownicy." },
+    { "title": "Mierzymy zachwyt, nie zmianę", "body": "Aplauz po prezentacji nie mówi, czy rozwiązanie skróciło proces, obniżyło ryzyko albo zmieniło decyzje ludzi." },
+    { "title": "AI dostaje wyjątek od zasad", "body": "Eksperyment omija architekturę i compliance, a potem odkrywa, że nie ma drogi na produkcję. Governance powinien przyspieszać, nie zatrzymywać." },
+    { "title": "Organizacja nie jest gotowa się zmienić", "body": "Najlepszy model niczego nie wdroży sam. Bez nowych ról, nawyków i decyzji AI pozostaje prezentacją o przyszłości." }
+  ],
+  "about": {
+    "eyebrow": "O mnie",
+    "title": "Łączę perspektywę technologa, doradcy i lidera dużej organizacji.",
+    "paragraphs": [
+      "Od 15 lat pracuję z technologią, danymi i AI. Mam jedną tezę zawodową: projekty AI w dużych firmach nie umierają na braku modelu, tylko między demo a produkcją — na wiedzy, integracji i governance. Wszystko, co robię, sprowadza się do zamykania tej luki.",
+      "Przez 12 lat w Accenture zbudowałem od zera zespół Data & AI, który urósł do ponad 70 osób i portfela kilkudziesięciu wdrożeń. Prowadziłem globalne programy angażujące ponad 350 specjalistów, z budżetami powyżej 80 mln USD. Łącznie mam za sobą ponad 50 projektów technologicznych i Data & AI.",
+      "Dziś odpowiadam za transformację AI Banku Pekao. Około 95% wdrożeń AI powstaje w naszym zespole — architektura, development i odpowiedzialność pozostają po stronie banku.",
+      "Wykładam na studiach podyplomowych z transformacji AI i szkolę kadrę zarządzającą z wdrażania AI w organizacjach regulowanych. O drodze od POC-u do produkcji mówię również publicznie, m.in. w cyklu PFR „Start z polskim AI”."
+    ],
+    "stats": [
+      { "value": "15", "suffix": "lat", "label": "w technologii" },
+      { "value": "50", "suffix": "+", "label": "projektów technologicznych i AI" },
+      { "value": "350", "suffix": "+", "label": "specjalistów w programach" },
+      { "value": "80", "suffix": " mln USD", "label": "zarządzanych budżetów" }
+    ]
+  },
+  "work": {
+    "eyebrow": "Wybrane doświadczenie",
+    "title": "Skala, w której AI musi działać naprawdę",
+    "items": [
+      { "number": "01", "title": "Organizacja Data & AI w Accenture", "body": "Od zera do ponad 70 osób i kilkudziesięciu wdrożeń. Nie rekrutacja, tylko zbudowanie kompetencji i usług, których wcześniej w firmie nie było." },
+      { "number": "02", "title": "Globalne programy technologiczne", "body": "Ponad 350 specjalistów, budżety powyżej 80 mln USD i klienci międzynarodowi. Skala, w której błąd w governance kosztuje więcej niż błąd w kodzie." },
+      { "number": "03", "title": "Transformacja AI Banku Pekao", "body": "Model operacyjny od podstaw: Responsible AI, architektura hybrydowa i portfel rozwiązań — od GenAI dla pracowników i klientów po agentów, Contact Center oraz AI w wytwarzaniu oprogramowania." }
+    ]
+  },
+  "talks": {
+    "eyebrow": "Tematy wystąpień",
+    "title": "Rozmowy, które warto zacząć na scenie",
+    "for": "Dla",
+    "format": "Format",
+    "items": [
+      { "title": "Kupiliście AI. Skąd wiecie, że działa?", "bullets": ["Dlaczego liczba licencji i promptów nie mierzy niczego, co ma znaczenie.", "Pięć wskaźników realnego użycia, które można wdrożyć w tydzień.", "Kiedy naprawdę powstaje uzależnienie od dostawcy i ile kosztuje wyjście."], "audience": "zarządy, CIO, HR", "format": "keynote 25–60 min, panel" },
+      { "title": "Portfel inicjatyw AI — którą zamknąć i kiedy", "bullets": ["Zamykanie projektów jako funkcja zarządcza, nie porażka zespołu.", "Kryteria zamknięcia: brak problemu, ścieżki na produkcję lub ekonomii skali.", "Jak uodpornić portfel na zmianę sponsora."], "audience": "zarządy, CIO", "format": "keynote 25–45 min" },
+      { "title": "Dlaczego model zgaduje — i jak testować coś, co za każdym razem odpowiada inaczej", "bullets": ["Halucynacja jako przewidywalny skutek sposobu trenowania modeli.", "Dlaczego publiczne benchmarki nie mierzą jakości waszego systemu.", "Ewaluacja jako bramka wdrożeniowa: testy, progi i regresja."], "audience": "zespoły techniczne, CIO", "format": "keynote 30 min, warsztat" },
+      { "title": "Dział AI od zera — model operacyjny, nie slajd", "bullets": ["Gdzie umieścić jednostkę AI w strukturze i dlaczego to ma znaczenie.", "Co naprawdę oznacza budowanie kompetencji wewnątrz zamiast outsourcingu.", "Budżet, współpraca z IT i ryzykiem oraz decyzje rekrutacyjne."], "audience": "zarządy, CIO, liderzy transformacji", "format": "keynote 30–60 min, warsztat" }
+    ]
+  },
+  "proof": {
+    "eyebrow": "Na scenie",
+    "title": "Doświadczenie w rozmowach z biznesem i technologią",
+    "events": ["European Financial Congress", "Kongres Forum Technologii Bankowych", "CXO HUB", "Data Science Summit Warsaw", "IT@Bank", "Code Europe"],
+    "note": "Referencje organizatorów pojawią się po ich autoryzacji."
+  },
+  "videos": {
+    "eyebrow": "Zobacz wystąpienia",
+    "title": "Nie tylko tezy. Zobacz mnie na scenie.",
+    "play": "Odtwórz nagranie",
+    "youtubeTitle": "Jak skutecznie zarządzać danymi w dużych organizacjach dzięki koncepcji Data Mesh",
+    "youtubeSource": "Integral Solutions · YouTube",
+    "newseriaTitle": "AI w dużej organizacji — rozmowa o praktyce wdrożeń",
+    "newseriaSource": "Newseria"
+  },
+  "materials": {
+    "eyebrow": "Materiały",
+    "title": "Wszystko, czego potrzebuje organizator",
+    "speaker": "Speaker kit",
+    "speakerDesc": "Bio, zdjęcia i pełne opisy wystąpień.",
+    "training": "Oferta szkoleniowa",
+    "trainingDesc": "One-pager dla zespołów i zarządów.",
+    "pending": "Materiał w przygotowaniu"
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Zróbmy wystąpienie, po którym coś się zmieni.",
+    "lead": "Opowiedz mi o publiczności, kontekście i pytaniu, z którym mierzy się Twoja organizacja.",
+    "write": "Napisz wiadomość",
+    "copy": "Kopiuj adres",
+    "copied": "Skopiowano",
+    "email": "kontakt@example.com",
+    "linkedin": "LinkedIn",
+    "linkedinUrl": "https://www.linkedin.com/in/karol-tajdus/?locale=pl",
+    "subject": "Zapytanie o wystąpienie"
+  },
+  "footer": "Karol ‘Taidi’ Tajduś · AI, które działa poza slajdem"
+}
